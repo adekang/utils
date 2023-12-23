@@ -1,7 +1,7 @@
 export const isStr = (str: any): str is string => typeof str === 'string'
 export const isNum = (num: any): num is number => typeof num === 'number'
 
-export const toDay = () => {
+export function toDay() {
   const d = new Date()
   let str = ''
   str += `${d.getFullYear()}年` // 获取当前年份
