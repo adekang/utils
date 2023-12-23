@@ -1,0 +1,54 @@
+{
+  "name": "@adekang/utils",
+  "type": "module",
+  "version": "1.0.13",
+  "packageManager": "pnpm@8.12.1",
+  "description": "my utils",
+  "keywords": [
+    "utils"
+  ],
+  "license": "MIT",
+  "author": "adekang <adekang@163.com> (https://github.com/adekang/)",
+  "homepage": "https://github.com/adekang/@adeknag/utils",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup --format esm,cjs --clean --dts",
+    "stub": "tsup --format esm",
+    "dev": "tsup --format esm,cjs --watch & eslint-flat-config-viewer",
+    "watch": "tsup --format esm,cjs --watch",
+    "test": "vitest",
+    "release": "bumpp && pnpm publish",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "vue": "^3.3.13"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.4.6",
+    "@vue/tsconfig": "^0.5.1",
+    "bumpp": "^9.2.1",
+    "eslint": "^8.56.0",
+    "lint-staged": "^15.2.0",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vitest": "^1.1.0",
+    "tsup": "^8.0.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
