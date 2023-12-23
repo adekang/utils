@@ -1,12 +1,12 @@
 {
   "name": "@adekang/utils",
   "type": "module",
-  "version": "1.0.15-beta.2",
+  "version": "1.0.15-beta.3",
   "packageManager": "pnpm@8.12.1",
   "description": "my utils",
   "author": "adekang <adekang@163.com> (https://github.com/adekang/)",
   "license": "MIT",
-  "homepage": "https://github.com/adekang/@adeknag/utils",
+  "homepage": "https://github.com/adekang/utils",
   "keywords": [
     "utils"
   ],
