@@ -12,3 +12,13 @@ export function toDay() {
   str += `${d.getSeconds()}秒`
   return str
 }
+
+/**
+ * 判断进来的是否是一个空的对象
+ * @param data
+ */
+export function isEmptyObj(data: any) {
+  if (data && typeof data === 'object' && !Array.isArray(data))
+    return Reflect.ownKeys(data).length === 0
+  return true
+}
