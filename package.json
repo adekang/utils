@@ -1,15 +1,15 @@
 {
   "name": "@adekang/utils",
   "type": "module",
-  "version": "1.0.15-beta.0",
+  "version": "1.0.15-beta.2",
   "packageManager": "pnpm@8.12.1",
   "description": "my utils",
+  "author": "adekang <adekang@163.com> (https://github.com/adekang/)",
+  "license": "MIT",
+  "homepage": "https://github.com/adekang/@adeknag/utils",
   "keywords": [
     "utils"
   ],
-  "license": "MIT",
-  "author": "adekang <adekang@163.com> (https://github.com/adekang/)",
-  "homepage": "https://github.com/adekang/@adeknag/utils",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -40,10 +40,10 @@
     "eslint": "^8.56.0",
     "lint-staged": "^15.2.0",
     "simple-git-hooks": "^2.9.0",
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "vite": "^5.0.10",
-    "vitest": "^1.1.0",
-    "tsup": "^8.0.1"
+    "vitest": "^1.1.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
