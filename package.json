@@ -1,7 +1,7 @@
 {
   "name": "@adekang/utils",
   "type": "module",
-  "version": "1.0.14",
+  "version": "1.0.15-beta.0",
   "packageManager": "pnpm@8.12.1",
   "description": "my utils",
   "keywords": [
